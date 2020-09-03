@@ -9,22 +9,23 @@
 # - 행렬 arr1, arr2의 행과 열의 길이는 500을 넘지 않습니다.
 
 def solution(arr1, arr2):
-    answer = [[]]
-    del answer[0]
-    # 행 구하기
-    column = len(arr1)
-    # 렬 구하기
-    row = len(arr1[0])
-    # 이중 for문을 사용하여 행렬 원소에 접근
-    for i in range(0, column):
-        # arr1과 arr2의 각 행의 더한 값을 잠시 저장할 tmp 변수
-        # 각 열의 연산이 끝나면 초기화해주는 기능도 있음
-        tmp = []
-        for j in range(0, row):
-            # arr1, arr2 각 열의 값을 더해서 tmp 리스트 마지막에 원소 추가
-            tmp.append(arr1[i][j] + arr2[i][j])
-        # arr1, arr2의 각 행의 더한 값을 결과값에 추가
-        answer.append(tmp)
+    # answer = [[]]
+    # del answer[0]
+    # # 행 구하기
+    # column = len(arr1)
+    # # 렬 구하기
+    # row = len(arr1[0])
+    # # 이중 for문을 사용하여 행렬 원소에 접근
+    # for i in range(0, column):
+    #     # arr1과 arr2의 각 행의 더한 값을 잠시 저장할 tmp 변수
+    #     # 각 열의 연산이 끝나면 초기화해주는 기능도 있음
+    #     tmp = []
+    #     for j in range(0, row):
+    #         # arr1, arr2 각 열의 값을 더해서 tmp 리스트 마지막에 원소 추가
+    #         tmp.append(arr1[i][j] + arr2[i][j])
+    #     # arr1, arr2의 각 행의 더한 값을 결과값에 추가
+    #     answer.append(tmp)
+    answer = [[c + d for c, d in zip(a, b)] for a, b in zip(arr1, arr2)]
     return answer
 
 arr1 = [[1,2],[2,3]]
