@@ -9,12 +9,12 @@
 # - str은 길이 1 이상인 문자열입니다.
 
 def solution(s):
-    # arr = list(s)
-    # arr.sort(reverse=True)
-    # answer = ('').join(arr)
-    # return answer
+    arr = list(s)
+    arr.sort(reverse=True)
+    answer = ('').join(arr)
+    return answer
 
     # 다른 사람 문제풀이
-    return ("").join(sorted(list(s), reverse=True))
+    # return ("").join(sorted(list(s), reverse=True))
 
 print(solution("Zbcdefg"))
