@@ -1,2 +1,3 @@
 # 가상환경은 github에 올리지 않겠다.
+.vscode
 myvenv
