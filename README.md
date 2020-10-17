@@ -1,8 +1,8 @@
 # 100days_coding_study
 - 8월 29일 ~ 12월 6일
 
-<!-- Python -->
-<!-- Level 1 -->
+# Python
+## Level 1
 - 1 day 0829.py - 직사각형 별찍기
 - 2 day 0830.py - 행렬의 덧셈
 - 3 day 0831.py - x만큼 간격이 있는 n개의 숫자
@@ -45,8 +45,8 @@
 - 40 day 1007.py - 실패율
 - 41 day 1008.py - 다트 게임
 
-<!-- Python -->
-<!-- Level 2 -->
+# Python
+## Level 2
 - 42 day 1009.py - N개의 최소공배수
 - 43 day 1010.py - JadenCase 문자열 만들기
 - 44 day 1011.py - 행렬의 곱셈
